@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4A3AF01CF9D1EE0024AA8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A3AEF1CF9D1EE0024AA8E /* AppDelegate.swift */; };
+		1F4A3AF21CF9D1EE0024AA8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A3AF11CF9D1EE0024AA8E /* ViewController.swift */; };
+		1F4A3AF51CF9D1EE0024AA8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A3AF31CF9D1EE0024AA8E /* Main.storyboard */; };
+		1F4A3AF81CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A3AF61CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodeld */; };
+		1F4A3AFA1CF9D1EE0024AA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A3AF91CF9D1EE0024AA8E /* Assets.xcassets */; };
+		1F4A3AFD1CF9D1EE0024AA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A3AFB1CF9D1EE0024AA8E /* LaunchScreen.storyboard */; };
+		1F4A3B081CF9D1EE0024AA8E /* MedAdministrationReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A3B071CF9D1EE0024AA8E /* MedAdministrationReminderTests.swift */; };
+		1F4A3B131CF9D1EE0024AA8E /* MedAdministrationReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A3B121CF9D1EE0024AA8E /* MedAdministrationReminderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F4A3B041CF9D1EE0024AA8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F4A3AE41CF9D1EE0024AA8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4A3AEB1CF9D1EE0024AA8E;
+			remoteInfo = MedAdministrationReminder;
+		};
+		1F4A3B0F1CF9D1EE0024AA8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F4A3AE41CF9D1EE0024AA8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4A3AEB1CF9D1EE0024AA8E;
+			remoteInfo = MedAdministrationReminder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F4A3AEC1CF9D1EE0024AA8E /* MedAdministrationReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedAdministrationReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4A3AEF1CF9D1EE0024AA8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F4A3AF11CF9D1EE0024AA8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F4A3AF41CF9D1EE0024AA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F4A3AF71CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedAdministrationReminder.xcdatamodel; sourceTree = "<group>"; };
+		1F4A3AF91CF9D1EE0024AA8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F4A3AFC1CF9D1EE0024AA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F4A3AFE1CF9D1EE0024AA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4A3B031CF9D1EE0024AA8E /* MedAdministrationReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedAdministrationReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4A3B071CF9D1EE0024AA8E /* MedAdministrationReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedAdministrationReminderTests.swift; sourceTree = "<group>"; };
+		1F4A3B091CF9D1EE0024AA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4A3B0E1CF9D1EE0024AA8E /* MedAdministrationReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedAdministrationReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4A3B121CF9D1EE0024AA8E /* MedAdministrationReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedAdministrationReminderUITests.swift; sourceTree = "<group>"; };
+		1F4A3B141CF9D1EE0024AA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F4A3AE91CF9D1EE0024AA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4A3B001CF9D1EE0024AA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4A3B0B1CF9D1EE0024AA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4A3AE31CF9D1EE0024AA8E = {
+			isa = PBXGroup;
+			children = (
+				1F4A3AEE1CF9D1EE0024AA8E /* MedAdministrationReminder */,
+				1F4A3B061CF9D1EE0024AA8E /* MedAdministrationReminderTests */,
+				1F4A3B111CF9D1EE0024AA8E /* MedAdministrationReminderUITests */,
+				1F4A3AED1CF9D1EE0024AA8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F4A3AED1CF9D1EE0024AA8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A3AEC1CF9D1EE0024AA8E /* MedAdministrationReminder.app */,
+				1F4A3B031CF9D1EE0024AA8E /* MedAdministrationReminderTests.xctest */,
+				1F4A3B0E1CF9D1EE0024AA8E /* MedAdministrationReminderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F4A3AEE1CF9D1EE0024AA8E /* MedAdministrationReminder */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A3AEF1CF9D1EE0024AA8E /* AppDelegate.swift */,
+				1F4A3AF11CF9D1EE0024AA8E /* ViewController.swift */,
+				1F4A3AF31CF9D1EE0024AA8E /* Main.storyboard */,
+				1F4A3AF91CF9D1EE0024AA8E /* Assets.xcassets */,
+				1F4A3AFB1CF9D1EE0024AA8E /* LaunchScreen.storyboard */,
+				1F4A3AFE1CF9D1EE0024AA8E /* Info.plist */,
+				1F4A3AF61CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodeld */,
+			);
+			path = MedAdministrationReminder;
+			sourceTree = "<group>";
+		};
+		1F4A3B061CF9D1EE0024AA8E /* MedAdministrationReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A3B071CF9D1EE0024AA8E /* MedAdministrationReminderTests.swift */,
+				1F4A3B091CF9D1EE0024AA8E /* Info.plist */,
+			);
+			path = MedAdministrationReminderTests;
+			sourceTree = "<group>";
+		};
+		1F4A3B111CF9D1EE0024AA8E /* MedAdministrationReminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A3B121CF9D1EE0024AA8E /* MedAdministrationReminderUITests.swift */,
+				1F4A3B141CF9D1EE0024AA8E /* Info.plist */,
+			);
+			path = MedAdministrationReminderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4A3AEB1CF9D1EE0024AA8E /* MedAdministrationReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4A3B171CF9D1EE0024AA8E /* Build configuration list for PBXNativeTarget "MedAdministrationReminder" */;
+			buildPhases = (
+				1F4A3AE81CF9D1EE0024AA8E /* Sources */,
+				1F4A3AE91CF9D1EE0024AA8E /* Frameworks */,
+				1F4A3AEA1CF9D1EE0024AA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedAdministrationReminder;
+			productName = MedAdministrationReminder;
+			productReference = 1F4A3AEC1CF9D1EE0024AA8E /* MedAdministrationReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F4A3B021CF9D1EE0024AA8E /* MedAdministrationReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4A3B1A1CF9D1EE0024AA8E /* Build configuration list for PBXNativeTarget "MedAdministrationReminderTests" */;
+			buildPhases = (
+				1F4A3AFF1CF9D1EE0024AA8E /* Sources */,
+				1F4A3B001CF9D1EE0024AA8E /* Frameworks */,
+				1F4A3B011CF9D1EE0024AA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4A3B051CF9D1EE0024AA8E /* PBXTargetDependency */,
+			);
+			name = MedAdministrationReminderTests;
+			productName = MedAdministrationReminderTests;
+			productReference = 1F4A3B031CF9D1EE0024AA8E /* MedAdministrationReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F4A3B0D1CF9D1EE0024AA8E /* MedAdministrationReminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4A3B1D1CF9D1EE0024AA8E /* Build configuration list for PBXNativeTarget "MedAdministrationReminderUITests" */;
+			buildPhases = (
+				1F4A3B0A1CF9D1EE0024AA8E /* Sources */,
+				1F4A3B0B1CF9D1EE0024AA8E /* Frameworks */,
+				1F4A3B0C1CF9D1EE0024AA8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4A3B101CF9D1EE0024AA8E /* PBXTargetDependency */,
+			);
+			name = MedAdministrationReminderUITests;
+			productName = MedAdministrationReminderUITests;
+			productReference = 1F4A3B0E1CF9D1EE0024AA8E /* MedAdministrationReminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F4A3AE41CF9D1EE0024AA8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Andela;
+				TargetAttributes = {
+					1F4A3AEB1CF9D1EE0024AA8E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1F4A3B021CF9D1EE0024AA8E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1F4A3AEB1CF9D1EE0024AA8E;
+					};
+					1F4A3B0D1CF9D1EE0024AA8E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1F4A3AEB1CF9D1EE0024AA8E;
+					};
+				};
+			};
+			buildConfigurationList = 1F4A3AE71CF9D1EE0024AA8E /* Build configuration list for PBXProject "MedAdministrationReminder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F4A3AE31CF9D1EE0024AA8E;
+			productRefGroup = 1F4A3AED1CF9D1EE0024AA8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F4A3AEB1CF9D1EE0024AA8E /* MedAdministrationReminder */,
+				1F4A3B021CF9D1EE0024AA8E /* MedAdministrationReminderTests */,
+				1F4A3B0D1CF9D1EE0024AA8E /* MedAdministrationReminderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F4A3AEA1CF9D1EE0024AA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4A3AFD1CF9D1EE0024AA8E /* LaunchScreen.storyboard in Resources */,
+				1F4A3AFA1CF9D1EE0024AA8E /* Assets.xcassets in Resources */,
+				1F4A3AF51CF9D1EE0024AA8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4A3B011CF9D1EE0024AA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4A3B0C1CF9D1EE0024AA8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4A3AE81CF9D1EE0024AA8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4A3AF81CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodeld in Sources */,
+				1F4A3AF21CF9D1EE0024AA8E /* ViewController.swift in Sources */,
+				1F4A3AF01CF9D1EE0024AA8E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4A3AFF1CF9D1EE0024AA8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4A3B081CF9D1EE0024AA8E /* MedAdministrationReminderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F4A3B0A1CF9D1EE0024AA8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4A3B131CF9D1EE0024AA8E /* MedAdministrationReminderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F4A3B051CF9D1EE0024AA8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4A3AEB1CF9D1EE0024AA8E /* MedAdministrationReminder */;
+			targetProxy = 1F4A3B041CF9D1EE0024AA8E /* PBXContainerItemProxy */;
+		};
+		1F4A3B101CF9D1EE0024AA8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4A3AEB1CF9D1EE0024AA8E /* MedAdministrationReminder */;
+			targetProxy = 1F4A3B0F1CF9D1EE0024AA8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F4A3AF31CF9D1EE0024AA8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4A3AF41CF9D1EE0024AA8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F4A3AFB1CF9D1EE0024AA8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F4A3AFC1CF9D1EE0024AA8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F4A3B151CF9D1EE0024AA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F4A3B161CF9D1EE0024AA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F4A3B181CF9D1EE0024AA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedAdministrationReminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonejezie.MedAdministrationReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F4A3B191CF9D1EE0024AA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedAdministrationReminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonejezie.MedAdministrationReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F4A3B1B1CF9D1EE0024AA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedAdministrationReminderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonejezie.MedAdministrationReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedAdministrationReminder.app/MedAdministrationReminder";
+			};
+			name = Debug;
+		};
+		1F4A3B1C1CF9D1EE0024AA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedAdministrationReminderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonejezie.MedAdministrationReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedAdministrationReminder.app/MedAdministrationReminder";
+			};
+			name = Release;
+		};
+		1F4A3B1E1CF9D1EE0024AA8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MedAdministrationReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonejezie.MedAdministrationReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MedAdministrationReminder;
+			};
+			name = Debug;
+		};
+		1F4A3B1F1CF9D1EE0024AA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MedAdministrationReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnsonejezie.MedAdministrationReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MedAdministrationReminder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4A3AE71CF9D1EE0024AA8E /* Build configuration list for PBXProject "MedAdministrationReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4A3B151CF9D1EE0024AA8E /* Debug */,
+				1F4A3B161CF9D1EE0024AA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4A3B171CF9D1EE0024AA8E /* Build configuration list for PBXNativeTarget "MedAdministrationReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4A3B181CF9D1EE0024AA8E /* Debug */,
+				1F4A3B191CF9D1EE0024AA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F4A3B1A1CF9D1EE0024AA8E /* Build configuration list for PBXNativeTarget "MedAdministrationReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4A3B1B1CF9D1EE0024AA8E /* Debug */,
+				1F4A3B1C1CF9D1EE0024AA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F4A3B1D1CF9D1EE0024AA8E /* Build configuration list for PBXNativeTarget "MedAdministrationReminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4A3B1E1CF9D1EE0024AA8E /* Debug */,
+				1F4A3B1F1CF9D1EE0024AA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F4A3AF61CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F4A3AF71CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodel */,
+			);
+			currentVersion = 1F4A3AF71CF9D1EE0024AA8E /* MedAdministrationReminder.xcdatamodel */;
+			path = MedAdministrationReminder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F4A3AE41CF9D1EE0024AA8E /* Project object */;
+}
