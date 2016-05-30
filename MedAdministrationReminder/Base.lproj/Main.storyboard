@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="07m-6V-0WX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MARHomeVC" id="BYZ-38-t0r" customClass="MARHomeVC" customModule="MedAdministrationReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,360 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="du1-zi-Rkx" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="240" width="560" height="40"/>
+                                <state key="normal" title="ADD NEW NURSE"/>
+                                <connections>
+                                    <action selector="onAddNurseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuR-dm-AZ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-6d-Hg5" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="300" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YJQ-bf-qfZ"/>
+                                </constraints>
+                                <state key="normal" title="ADD NEW PATIENT"/>
+                                <connections>
+                                    <action selector="onAddPatientButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ho9-Dd-kt1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfp-Ch-V52" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="360" width="560" height="40"/>
+                                <state key="normal" title="ADD NEW MEDICINE"/>
+                                <connections>
+                                    <action selector="onAddMedicineButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="viZ-K6-4Of"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4n-Ms-ExC" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="250.5" y="423" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Zh-eg-0OR"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zlb-Vt-c2W"/>
+                                </constraints>
+                                <state key="normal" title="SIGN OUT"/>
+                                <connections>
+                                    <action selector="onSignOutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7s-vw-gNL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gh-Z9-N8a" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="170" width="560" height="40"/>
+                                <state key="normal" title="MY PATIENTS"/>
+                                <connections>
+                                    <action selector="onSeeAllPatientButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSL-TP-PFk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Gh-Z9-N8a" firstAttribute="centerX" secondItem="du1-zi-Rkx" secondAttribute="centerX" id="2EF-6d-swW"/>
+                            <constraint firstItem="q4n-Ms-ExC" firstAttribute="centerX" secondItem="Zfp-Ch-V52" secondAttribute="centerX" id="A5i-ab-B7d"/>
+                            <constraint firstAttribute="trailing" secondItem="hL4-6d-Hg5" secondAttribute="trailing" constant="20" id="BfX-k1-4Dr"/>
+                            <constraint firstItem="hL4-6d-Hg5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ELJ-uL-6B7"/>
+                            <constraint firstItem="du1-zi-Rkx" firstAttribute="centerX" secondItem="hL4-6d-Hg5" secondAttribute="centerX" id="P4k-ds-upv"/>
+                            <constraint firstItem="du1-zi-Rkx" firstAttribute="height" secondItem="hL4-6d-Hg5" secondAttribute="height" id="QwG-Gu-mZv"/>
+                            <constraint firstItem="hL4-6d-Hg5" firstAttribute="top" secondItem="du1-zi-Rkx" secondAttribute="bottom" constant="20" id="Sjg-eD-Ijh"/>
+                            <constraint firstItem="q4n-Ms-ExC" firstAttribute="top" secondItem="Zfp-Ch-V52" secondAttribute="bottom" constant="23" id="UDG-qD-GFt"/>
+                            <constraint firstItem="5Gh-Z9-N8a" firstAttribute="width" secondItem="du1-zi-Rkx" secondAttribute="width" id="Ulo-MP-TGI"/>
+                            <constraint firstItem="Zfp-Ch-V52" firstAttribute="height" secondItem="hL4-6d-Hg5" secondAttribute="height" id="XMy-pR-xMN"/>
+                            <constraint firstItem="du1-zi-Rkx" firstAttribute="top" secondItem="5Gh-Z9-N8a" secondAttribute="bottom" constant="30" id="ZQL-7k-vQB"/>
+                            <constraint firstItem="Zfp-Ch-V52" firstAttribute="top" secondItem="hL4-6d-Hg5" secondAttribute="bottom" constant="20" id="b1K-gZ-T44"/>
+                            <constraint firstItem="hL4-6d-Hg5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="cyl-lU-iUP"/>
+                            <constraint firstItem="Zfp-Ch-V52" firstAttribute="width" secondItem="hL4-6d-Hg5" secondAttribute="width" id="dni-u5-801"/>
+                            <constraint firstItem="du1-zi-Rkx" firstAttribute="width" secondItem="hL4-6d-Hg5" secondAttribute="width" id="wxT-r4-wPC"/>
+                            <constraint firstItem="5Gh-Z9-N8a" firstAttribute="height" secondItem="du1-zi-Rkx" secondAttribute="height" id="yAS-zK-yh5"/>
+                            <constraint firstItem="Zfp-Ch-V52" firstAttribute="centerX" secondItem="hL4-6d-Hg5" secondAttribute="centerX" id="z6Y-BW-p3f"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DaN-kj-NRU"/>
+                    <connections>
+                        <outlet property="addNewMedicineButton" destination="Zfp-Ch-V52" id="WEO-c5-yqH"/>
+                        <outlet property="addNewNurseButton" destination="du1-zi-Rkx" id="z7R-YY-MeU"/>
+                        <outlet property="addNewPatientButton" destination="hL4-6d-Hg5" id="CWh-GB-heX"/>
+                        <outlet property="seeAllPatient" destination="5Gh-Z9-N8a" id="gPn-mR-qUq"/>
+                        <outlet property="signOutButton" destination="q4n-Ms-ExC" id="kib-Zt-wfc"/>
+                        <segue destination="TyF-Mo-9oV" kind="show" identifier="HomeVCToAddPatientVCSegue" id="cEW-9t-k3K"/>
+                        <segue destination="NNb-oY-UG2" kind="show" identifier="HomeVCToAddNurseVCSegue" id="vE5-oX-vXF"/>
+                        <segue destination="Tso-rt-APH" kind="show" identifier="HomeVCToAddMedicineVCSegue" id="DNq-py-n4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056" y="-379"/>
+        </scene>
+        <!--Add NurseVC-->
+        <scene sceneID="Xv4-aw-5kx">
+            <objects>
+                <viewController storyboardIdentifier="MARAddNurseVC" id="NNb-oY-UG2" customClass="MARAddNurseVC" customModule="MedAdministrationReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U8Z-Yd-ndp"/>
+                        <viewControllerLayoutGuide type="bottom" id="CS2-7s-KTX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vNT-sK-hNi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQo-Cy-xEn">
+                                <rect key="frame" x="20.5" y="220" width="560" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9C-ZY-fQP">
+                                <rect key="frame" x="20" y="280" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G0z-Zu-JT2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVp-1B-l33" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="350" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pa6-rd-txU"/>
+                                </constraints>
+                                <state key="normal" title="ADD NURSE"/>
+                                <connections>
+                                    <action selector="onAddNurseButtonTapped:" destination="NNb-oY-UG2" eventType="touchUpInside" id="SSr-HK-oWt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sQo-Cy-xEn" firstAttribute="width" secondItem="r9C-ZY-fQP" secondAttribute="width" id="5Hy-zr-quC"/>
+                            <constraint firstItem="CVp-1B-l33" firstAttribute="top" secondItem="r9C-ZY-fQP" secondAttribute="bottom" constant="30" id="75P-TR-i5s"/>
+                            <constraint firstItem="r9C-ZY-fQP" firstAttribute="centerY" secondItem="vNT-sK-hNi" secondAttribute="centerY" id="7H7-S3-xLz"/>
+                            <constraint firstAttribute="trailing" secondItem="r9C-ZY-fQP" secondAttribute="trailing" constant="20" id="Nv1-H9-L5b"/>
+                            <constraint firstAttribute="trailing" secondItem="CVp-1B-l33" secondAttribute="trailing" constant="20" id="dpX-k9-XV6"/>
+                            <constraint firstItem="r9C-ZY-fQP" firstAttribute="top" secondItem="sQo-Cy-xEn" secondAttribute="bottom" constant="20" id="glJ-ah-NE1"/>
+                            <constraint firstItem="sQo-Cy-xEn" firstAttribute="centerX" secondItem="r9C-ZY-fQP" secondAttribute="centerX" id="icL-DA-KlU"/>
+                            <constraint firstItem="sQo-Cy-xEn" firstAttribute="height" secondItem="r9C-ZY-fQP" secondAttribute="height" id="lXZ-xu-4j4"/>
+                            <constraint firstItem="CVp-1B-l33" firstAttribute="leading" secondItem="vNT-sK-hNi" secondAttribute="leading" constant="20" id="pO8-tI-toX"/>
+                            <constraint firstItem="r9C-ZY-fQP" firstAttribute="leading" secondItem="vNT-sK-hNi" secondAttribute="leading" constant="20" id="vjn-As-qNE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addNurseButton" destination="CVp-1B-l33" id="WFW-pZ-CrS"/>
+                        <outlet property="emailAddressTextField" destination="sQo-Cy-xEn" id="iHI-tx-Bbl"/>
+                        <outlet property="passwordTextField" destination="r9C-ZY-fQP" id="fTg-eB-Dgt"/>
+                        <segue destination="k2D-SR-8GT" kind="unwind" identifier="unwindToHomeVC" unwindAction="unwindToHomeVC:" id="zzG-oU-eVT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NlT-1z-gBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="k2D-SR-8GT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="-1060"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wPN-KV-6Yc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="07m-6V-0WX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u4R-TA-QST">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z9U-XD-guj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Rh-OO-CSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="-379"/>
+        </scene>
+        <!--Add MedicineVC-->
+        <scene sceneID="YtO-ba-Bkd">
+            <objects>
+                <viewController storyboardIdentifier="MARAddMedicineVC" id="Tso-rt-APH" customClass="MARAddMedicineVC" customModule="MedAdministrationReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0A0-lk-EM6"/>
+                        <viewControllerLayoutGuide type="bottom" id="KSi-Za-agn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hpF-g6-vj5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-Yv-KBd">
+                                <rect key="frame" x="20" y="280" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DzZ-21-j3s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8A-25-NCT" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="350" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DzJ-vg-Tki"/>
+                                </constraints>
+                                <state key="normal" title="ADD MEDICINE"/>
+                                <connections>
+                                    <action selector="onAddMedicineButtonTapped:" destination="Tso-rt-APH" eventType="touchUpInside" id="pjd-Dx-YDe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gDO-Yv-KBd" firstAttribute="centerY" secondItem="hpF-g6-vj5" secondAttribute="centerY" id="4v4-6j-tpy"/>
+                            <constraint firstItem="R8A-25-NCT" firstAttribute="top" secondItem="gDO-Yv-KBd" secondAttribute="bottom" constant="30" id="G9Q-Gg-nKb"/>
+                            <constraint firstAttribute="trailing" secondItem="gDO-Yv-KBd" secondAttribute="trailing" constant="20" id="KYu-qV-OWf"/>
+                            <constraint firstItem="R8A-25-NCT" firstAttribute="leading" secondItem="hpF-g6-vj5" secondAttribute="leading" constant="20" id="TNX-dr-fYA"/>
+                            <constraint firstItem="gDO-Yv-KBd" firstAttribute="leading" secondItem="hpF-g6-vj5" secondAttribute="leading" constant="20" id="bnk-GP-GtI"/>
+                            <constraint firstAttribute="trailing" secondItem="R8A-25-NCT" secondAttribute="trailing" constant="20" id="mf2-TA-neY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addMedicineButton" destination="R8A-25-NCT" id="TT6-h9-j2I"/>
+                        <outlet property="nameTextField" destination="gDO-Yv-KBd" id="1hJ-3C-4Ul"/>
+                        <segue destination="5b5-cx-LGc" kind="unwind" identifier="unwindToHomeVC" unwindAction="unwindToHomeVC:" id="C8I-jr-56f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="End-Ps-SfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5b5-cx-LGc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="321"/>
+        </scene>
+        <!--Add PatienVC-->
+        <scene sceneID="1Wf-Bm-4Ey">
+            <objects>
+                <viewController storyboardIdentifier="MARAddPatienVC" id="TyF-Mo-9oV" customClass="MARAddPatienVC" customModule="MedAdministrationReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhb-AL-Pv5"/>
+                        <viewControllerLayoutGuide type="bottom" id="pfl-yB-6V6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IvA-Vr-9MI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XkP-cq-Z90">
+                                <rect key="frame" x="20.5" y="240" width="560" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3GG-7E-6Dj">
+                                <rect key="frame" x="20" y="300" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="v9g-i4-Nq4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6w-Q3-o3y" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="370" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="k2H-ut-4WO"/>
+                                </constraints>
+                                <state key="normal" title="ADD PATIENT"/>
+                                <connections>
+                                    <action selector="onAddPatientButtonTapped:" destination="TyF-Mo-9oV" eventType="touchUpInside" id="Img-kQ-cVd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-Tc-4jA">
+                                <rect key="frame" x="20" y="180" width="560" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XkP-cq-Z90" firstAttribute="height" secondItem="3GG-7E-6Dj" secondAttribute="height" id="A5A-uK-PS4"/>
+                            <constraint firstAttribute="trailing" secondItem="c6w-Q3-o3y" secondAttribute="trailing" constant="20" id="Eb8-07-aGV"/>
+                            <constraint firstItem="c6w-Q3-o3y" firstAttribute="top" secondItem="3GG-7E-6Dj" secondAttribute="bottom" constant="30" id="K8a-If-H6K"/>
+                            <constraint firstItem="htQ-Tc-4jA" firstAttribute="width" secondItem="XkP-cq-Z90" secondAttribute="width" id="My9-nN-IWz"/>
+                            <constraint firstItem="3GG-7E-6Dj" firstAttribute="top" secondItem="XkP-cq-Z90" secondAttribute="bottom" constant="20" id="Nas-4M-QM0"/>
+                            <constraint firstItem="XkP-cq-Z90" firstAttribute="width" secondItem="3GG-7E-6Dj" secondAttribute="width" id="QxF-mZ-7H8"/>
+                            <constraint firstItem="c6w-Q3-o3y" firstAttribute="leading" secondItem="IvA-Vr-9MI" secondAttribute="leading" constant="20" id="Uc3-dZ-Hnu"/>
+                            <constraint firstItem="XkP-cq-Z90" firstAttribute="top" secondItem="htQ-Tc-4jA" secondAttribute="bottom" constant="20" id="XJS-E9-9aW"/>
+                            <constraint firstItem="htQ-Tc-4jA" firstAttribute="height" secondItem="XkP-cq-Z90" secondAttribute="height" id="XdU-01-gQg"/>
+                            <constraint firstItem="3GG-7E-6Dj" firstAttribute="centerY" secondItem="IvA-Vr-9MI" secondAttribute="centerY" constant="20" id="YOG-nO-CDB"/>
+                            <constraint firstItem="3GG-7E-6Dj" firstAttribute="leading" secondItem="IvA-Vr-9MI" secondAttribute="leading" constant="20" id="ZfH-gm-dZS"/>
+                            <constraint firstItem="XkP-cq-Z90" firstAttribute="centerX" secondItem="3GG-7E-6Dj" secondAttribute="centerX" id="mZZ-2D-R66"/>
+                            <constraint firstItem="htQ-Tc-4jA" firstAttribute="centerX" secondItem="XkP-cq-Z90" secondAttribute="centerX" id="rYa-lJ-zxu"/>
+                            <constraint firstAttribute="trailing" secondItem="3GG-7E-6Dj" secondAttribute="trailing" constant="20" id="t9V-0j-QZv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addPatientButton" destination="c6w-Q3-o3y" id="K1t-JO-fYN"/>
+                        <outlet property="emailAddressTextField" destination="htQ-Tc-4jA" id="Mto-DZ-kOh"/>
+                        <outlet property="fullNameTextField" destination="XkP-cq-Z90" id="ePv-c0-ANS"/>
+                        <outlet property="phoneNumberTextField" destination="3GG-7E-6Dj" id="o8g-vL-XOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vg0-5w-9KH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="-379"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="ahf-pM-pxN">
+            <objects>
+                <viewController storyboardIdentifier="MARLoginVC" id="gzd-qL-gXO" customClass="MARLoginVC" customModule="MedAdministrationReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8vk-bo-KEh"/>
+                        <viewControllerLayoutGuide type="bottom" id="lKo-M3-OKX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaI-F0-V6V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dFP-ed-IvV">
+                                <rect key="frame" x="20" y="220" width="560" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KqX-bQ-8gH">
+                                <rect key="frame" x="20" y="280" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="u0O-YJ-61F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hg-d4-4ON" customClass="MARButton" customModule="MedAdministrationReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="350" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="COh-We-F2Z"/>
+                                </constraints>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="onLoginButtonTapped:" destination="gzd-qL-gXO" eventType="touchUpInside" id="z21-Y4-t6f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dFP-ed-IvV" firstAttribute="width" secondItem="KqX-bQ-8gH" secondAttribute="width" id="0g9-25-LHA"/>
+                            <constraint firstItem="KqX-bQ-8gH" firstAttribute="leading" secondItem="TaI-F0-V6V" secondAttribute="leading" constant="20" id="21G-7h-LYX"/>
+                            <constraint firstItem="KqX-bQ-8gH" firstAttribute="top" secondItem="dFP-ed-IvV" secondAttribute="bottom" constant="20" id="Fos-kn-rkt"/>
+                            <constraint firstItem="3Hg-d4-4ON" firstAttribute="leading" secondItem="TaI-F0-V6V" secondAttribute="leading" constant="20" id="GaT-Qp-Bgw"/>
+                            <constraint firstItem="3Hg-d4-4ON" firstAttribute="top" secondItem="KqX-bQ-8gH" secondAttribute="bottom" constant="30" id="PB5-NT-f8u"/>
+                            <constraint firstItem="dFP-ed-IvV" firstAttribute="height" secondItem="KqX-bQ-8gH" secondAttribute="height" id="T5y-yM-trS"/>
+                            <constraint firstItem="dFP-ed-IvV" firstAttribute="centerX" secondItem="KqX-bQ-8gH" secondAttribute="centerX" id="UdS-Vo-JCg"/>
+                            <constraint firstAttribute="trailing" secondItem="3Hg-d4-4ON" secondAttribute="trailing" constant="20" id="dGX-1F-aec"/>
+                            <constraint firstAttribute="trailing" secondItem="KqX-bQ-8gH" secondAttribute="trailing" constant="20" id="dM3-hy-kWG"/>
+                            <constraint firstItem="KqX-bQ-8gH" firstAttribute="centerY" secondItem="TaI-F0-V6V" secondAttribute="centerY" id="sie-qg-XWh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="1yx-Ea-dy0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="dMx-w6-NBB">
+                            <connections>
+                                <action selector="onCancelButtonTapped:" destination="gzd-qL-gXO" id="toi-1U-e9H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelBarButton" destination="dMx-w6-NBB" id="kBy-jT-ex5"/>
+                        <outlet property="emailAddressTextField" destination="dFP-ed-IvV" id="ddE-EZ-6I1"/>
+                        <outlet property="loginButton" destination="3Hg-d4-4ON" id="JXN-l8-jz2"/>
+                        <outlet property="navItem" destination="1yx-Ea-dy0" id="J7y-oG-23D"/>
+                        <outlet property="passwordTextField" destination="KqX-bQ-8gH" id="lCx-y5-Sue"/>
+                        <segue destination="S4b-FX-rx3" kind="unwind" identifier="unwindToHomeVC" unwindAction="unwindToHomeVC:" id="Zxl-jD-gOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FN-98-pbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="S4b-FX-rx3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="321"/>
         </scene>
     </scenes>
 </document>

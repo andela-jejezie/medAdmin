@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F4A3AEB1CF9D1EE0024AA8E"
+               BuildableName = "MedAdministrationReminder.app"
+               BlueprintName = "MedAdministrationReminder"
+               ReferencedContainer = "container:MedAdministrationReminder.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F4A3B021CF9D1EE0024AA8E"
+               BuildableName = "MedAdministrationReminderTests.xctest"
+               BlueprintName = "MedAdministrationReminderTests"
+               ReferencedContainer = "container:MedAdministrationReminder.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F4A3B0D1CF9D1EE0024AA8E"
+               BuildableName = "MedAdministrationReminderUITests.xctest"
+               BlueprintName = "MedAdministrationReminderUITests"
+               ReferencedContainer = "container:MedAdministrationReminder.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1F4A3AEB1CF9D1EE0024AA8E"
+            BuildableName = "MedAdministrationReminder.app"
+            BlueprintName = "MedAdministrationReminder"
+            ReferencedContainer = "container:MedAdministrationReminder.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1F4A3AEB1CF9D1EE0024AA8E"
+            BuildableName = "MedAdministrationReminder.app"
+            BlueprintName = "MedAdministrationReminder"
+            ReferencedContainer = "container:MedAdministrationReminder.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1F4A3AEB1CF9D1EE0024AA8E"
+            BuildableName = "MedAdministrationReminder.app"
+            BlueprintName = "MedAdministrationReminder"
+            ReferencedContainer = "container:MedAdministrationReminder.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
